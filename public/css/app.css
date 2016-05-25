@@ -1,0 +1,22 @@
+.thumbnail img{
+    max-height: 280px;
+}
+
+.admin-connexion{
+    min-height:250px;
+    position: fixed;
+    top: 50%;
+    margin-top:-200px;
+    background: #f3f3f3;
+    padding: 0 0 25px;
+    box-shadow:  0 0 10px #989898;
+}
+.admin-connexion-title{
+    width:100%;
+    text-align: center;
+    margin: 0;
+    padding: 4px;
+    background: #e4e4e4;
+    color: #FFF;
+    text-shadow: 0 0 2px #939393;
+}

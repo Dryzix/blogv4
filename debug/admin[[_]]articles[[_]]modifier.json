@@ -1,0 +1,1 @@
+{"callable":"Admin\\Articles#modifyPost","task":true,"sql":["SELECT title, COUNT(*) AS verif \r\nFROM `articles` \r\nWHERE id=21","UPDATE articles SET idUser = 21User, title = 't', hook = 't', content = 'oeoe', url = 't', date = '2016-05-05 00:00:00', idCateg = 6\r\nWHERE id=:id"],"time":1.03556}

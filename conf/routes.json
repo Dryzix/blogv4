@@ -1,0 +1,35 @@
+{
+   "GET": {
+     "/:page": {"callable": "Home#index",  "with": {":page" : "([0-9]+)"}},
+     "/": {"callable": "Home#index"},
+     "/article/:id": {"callable": "Article#index", "with": {":id": "[0-9]+"}},
+
+
+       "admin": {"callable": "Admin\\Home#index"},
+       "connexion": {"callable": "Admin\\Home#connexion"},
+       "deconnexion": {"callable": "Admin\\Home#deconnexion"},
+
+       "admin/articles": {"callable": "Admin\\Articles#index"},
+       "admin/articles/ajouter": {"callable": "Admin\\Articles#add"},
+       "admin/articles/supprimer/:id": {"callable": "Admin\\Articles#delete",  "with": {":id" : "([0-9]+)"}},
+       "admin/articles/modifier/:id": {"callable": "Admin\\Articles#modify",  "with": {":id" : "([0-9]+)"}},
+
+       "admin/categories": {"callable": "Admin\\Categories#index"},
+       "admin/categories/ajouter": {"callable": "Admin\\Categories#add"},
+       "admin/categories/supprimer/:id": {"callable": "Admin\\Categories#delete", "with": {":id" : "([0-9]+)"}},
+
+
+       "ERROR404": {"callable": "Error#e404"},
+       "/test/:id": {"callable": "Home#index2", "with": {":id" : "([0-9]+)"}}
+     },
+  "POST": {
+
+    "connexion": {"callable": "Admin\\Home#loginTest"},
+    "admin/articles/supprimer": {"callable": "Admin\\Articles#deleteConf"},
+    "admin/articles/modifier": {"callable": "Admin\\Articles#modifyPost"},
+    "admin/articles/ajouter": {"callable": "Admin\\Articles#addPost"},
+
+    "admin/categories/supprimer": {"callable": "Admin\\Categories#deleteConf"},
+    "admin/categories/ajouter": {"callable": "Admin\\Categories#addPost"}
+  }
+}

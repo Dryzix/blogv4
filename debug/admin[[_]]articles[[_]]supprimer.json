@@ -1,0 +1,1 @@
+{"callable":"Admin\\Articles#deleteConf","task":true,"sql":["DELETE FROM articles \r\nWHERE id=21"],"time":1.05707}

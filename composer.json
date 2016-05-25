@@ -1,0 +1,16 @@
+{
+    "name": "tom/blog",
+    "authors": [
+        {
+            "name": "Tom BACCI",
+            "email": "tom.bacci@hotmail.fr"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "BLOG\\": "./",
+            "PHX\\": "../v4/phx/"
+        }
+    }
+}

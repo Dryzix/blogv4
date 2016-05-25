@@ -1,0 +1,28 @@
+{
+  "siteUrl": "http://localhost/blog/",
+  "rootPath": "S:/programmes/xampp/htdocs/blog/",
+  "confPath": "conf/",
+  "Database": {
+    "type": "mysql",
+    "dbHost": "localhost",
+    "dbUser": "root",
+    "dbPassword": "",
+    "dbName" : "blog"
+  },
+  "Debug":{
+    "path" : "debug/"
+  },
+  "Cache": {
+      "use": true,
+      "path": "tmp/"
+  },
+  "Router":{
+    "routesConfFile": "routes.json"
+  },
+  "Controller":{
+    "controllersNamespace" : "\\BLOG\\Controller"
+  },
+  "ErrorPages":{
+    "error404": "ERROR404"
+  }
+}
